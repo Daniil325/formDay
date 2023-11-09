@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -16,8 +23,13 @@ body {
 .main__wrapper {
     max-width: 1200px;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 100%;
 }
 
@@ -32,19 +44,25 @@ body {
 
 .main {
     background: #1B4E9B;
-    background-image: url('/media/текстура.png');
+    background-image: url('/media/текстура-min.png');
     background-size: 500px;
     border-radius: 20px;
     width: 900px;
     margin: auto;
     margin-bottom: 40px;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 .success {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'FontName bold';
 }
 
@@ -69,8 +87,12 @@ label {
 
 .form__container {
     padding-right: 10px;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
 }
 
@@ -143,16 +165,19 @@ button {
 
 .btn_container {
     width: 100%;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 .footer {
     background: #1B4E9B;
-    background-image: url('/media/текстура.png');
+    background-image: url('/media/текстура-min.png');
     background-size: 300px;
     border-top-left-radius: 45px 45px;
     border-top-right-radius: 45px 45px;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     padding-bottom: 10px;
 }
 
