@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'main',
 ]
 
+CSRF_TRUSTED_ORIGINS = ["https://web-production-92fce.up.railway.app/"]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -55,8 +57,7 @@ ROOT_URLCONF = 'formDay.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
