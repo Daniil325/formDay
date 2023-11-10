@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'main',
 ]
 
-CSRF_TRUSTED_ORIGINS = ["https://web-production-92fce.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://profasuru.up.railway.app"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
