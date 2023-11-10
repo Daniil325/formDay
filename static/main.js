@@ -18,4 +18,3 @@ while (w - 65 > 0){
     w -= 65
 }
 
-console.log(pat);
