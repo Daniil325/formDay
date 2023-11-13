@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Поздравьте любимых преподавателей</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'minified.css' %}">
 </head>
 <body>
 <div class="main__wrapper">
@@ -15,7 +15,6 @@
 			<img class="header-image" src="/media/мобил-min.png" alt="">
 		</picture>
 	</header>
-
 	<main class="main">
 		<div class="form__wrapper">
 			<p class="great_text">Форма для поздравления</p>
@@ -24,16 +23,11 @@
 				<form class="main__form" action="" method="post">
 					{% csrf_token %}
 					{{ form.as_p }}
-
 					<button type="submit">Отправить</button>
-
 				</form>
 			</div>
-
 		</div>
-
 	</main>
-
 	<footer class="footer">
 		<p class="footer__text">Сайт создан инновационным медиакомьюнити Медиа.Hub.</p>
 		<p class="footer__text_2">Подписывайтесь на наши социальные сети!</p>
@@ -54,9 +48,6 @@
 		<div class="footer_pattern">
 		</div>
 	</footer>
-
 </div>
-
 </body>
-<script src="{% static 'main.js' %}"></script>
 </html>
