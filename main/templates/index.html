@@ -23,6 +23,13 @@
 				<form class="main__form" action="" method="post">
 					{% csrf_token %}
 					{{ form.as_p }}
+
+					<input type="checkbox" id="myCheck" required/>
+					<a href="/media/согласие-на-обрабаотку-персональных-данных-Медиахаб%20(3).docx" class="check__link" download>
+						Согласие на обработку персональных данных
+					</a>
+
+					<p></p>
 					<button type="submit">Отправить</button>
 				</form>
 			</div>

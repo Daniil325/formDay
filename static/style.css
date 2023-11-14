@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +21,7 @@ body {
 
 .main__wrapper {
     max-width: 1200px;
+    background: #EBECF0;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -238,4 +232,23 @@ button {
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.check__element{
+    display: flex;
+
+}
+
+.check__link{
+    text-decoration: none;
+    font-family: "FontName bold";
+    color: white;
+}
+
+.error{
+    color: red;
+}
+
+.error.hide{
+    display: none;
 }
