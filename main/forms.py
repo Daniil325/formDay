@@ -13,6 +13,6 @@ class MessageForm(forms.ModelForm):
             'fio': TextInput(attrs={'placeholder': 'ФИО'}),
             'faculty': TextInput(attrs={'placeholder': 'Институт'}),
             'group': TextInput(attrs={'placeholder': 'Группа'}),
-            'comment': Textarea(attrs={'placeholder': 'Поздравление'}),
+            'comment': Textarea(attrs={'placeholder': 'Поздравление(не более 500 символов)'}),
             'media_link': TextInput(attrs={'placeholder': 'Ссылка на файлы с поздравлением (по желанию)'}),
         }

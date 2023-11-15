@@ -252,3 +252,10 @@ button {
 .error.hide{
     display: none;
 }
+
+.errorlist{
+    list-style-type: none !important;
+    color: white !important;
+    font-family: "FontName bold" !important;
+    margin-bottom: 5px;
+}
